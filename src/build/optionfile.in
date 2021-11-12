@@ -1,0 +1,7 @@
+type = gaussian
+natomtypes = 2
+atomtypes = Ga N
+strategy = weighted
+weight_type = electronegativity
+output_file = eg1.sg
+cutoff = 1.0
