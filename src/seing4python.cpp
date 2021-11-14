@@ -6,6 +6,22 @@
 #include "periodictable.cpp"
 #include "atomicsystem.h"
 #include "atomicsystem.cpp"
+#include "fingerprintgenerator.h"
+#include "fingerprintgenerator.cpp"
+#include "neighborlist.h"
+#include "neighborlist.cpp"
+#include "gaussiancalculator.h"
+#include "gaussiancalculator.cpp"
+#include "bispectrumcalculator.h"
+#include "bispectrumcalculator.cpp"
+#include "zernikecalculator.h"
+#include "zernikecalculator.cpp"
+#include "genericlocalcalculator.h"
+#include "genericlocalcalculator.cpp"
+#include "utilities.h"
+#include "utilities.cpp"
+#include "agnicalculator.h"
+#include "agnicalculator.cpp"
 #include <pybind11/pybind11.h>
 
 
@@ -59,4 +75,11 @@ PYBIND11_MODULE(seing4python, m){
 	    .def("get_xpbc", &AtomicSystem::get_xpbc)
 	    .def("get_ypbc", &AtomicSystem::get_ypbc)
             .def("get_zpbc", &AtomicSystem::get_zpbc);
+    
+    py::class_<FingerprintGenerator>(m, "FingerprintGenerator")
+	    .def(py::init<AtomicSystem&, fingerprintProperties>())
+	    .def("write2file", &FingerprintGenerator::write2file);
+
 }
+
+

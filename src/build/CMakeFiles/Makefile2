@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kitao/Desktop/seing/att4/seing/src
+CMAKE_SOURCE_DIR = /home/kitao/Desktop/seing/att6/seing4python/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kitao/Desktop/seing/att4/seing/src/build
+CMAKE_BINARY_DIR = /home/kitao/Desktop/seing/att6/seing4python/src/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ pybind11/clean:
 CMakeFiles/seing4python.dir/all:
 	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/depend
 	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kitao/Desktop/seing/att4/seing/src/build/CMakeFiles --progress-num=1,2 "Built target seing4python"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kitao/Desktop/seing/att6/seing4python/src/build/CMakeFiles --progress-num=1,2 "Built target seing4python"
 .PHONY : CMakeFiles/seing4python.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/seing4python.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kitao/Desktop/seing/att4/seing/src/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kitao/Desktop/seing/att6/seing4python/src/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/seing4python.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kitao/Desktop/seing/att4/seing/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kitao/Desktop/seing/att6/seing4python/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/seing4python.dir/rule
 
 # Convenience name for target.
