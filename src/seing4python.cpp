@@ -31,7 +31,10 @@ PYBIND11_MODULE(seing4python, m){
     m.doc() = "Read in the option files and create read_prop_file";
     m.def("read_prop_file", &read_prop_file);
 
-    py::class_<fingerprintProperties>(m, "fingerprintProperties");
+    py::class_<fingerprintProperties>(m, "fingerprintProperties")
+	    .def_readwrite("box_size", &fingerprintProperties::box_size)
+	    .def_readwrite("output_file", &fingerprintProperties::output_file)
+	    .def_readwrite("output_mode", &fingerprintProperties::output_mode);
     
     py::class_<Atom, std::shared_ptr<Atom>>(m, "Atom")
 	    .def(py::init<const std::string &, double, double, double>())
@@ -79,7 +82,7 @@ PYBIND11_MODULE(seing4python, m){
     py::class_<FingerprintGenerator>(m, "FingerprintGenerator")
 	    .def(py::init<AtomicSystem&, fingerprintProperties>())
 	    .def("write2file", &FingerprintGenerator::write2file);
-
+                     
 }
 
 
