@@ -81,8 +81,11 @@ PYBIND11_MODULE(seing4python, m){
     
     py::class_<FingerprintGenerator>(m, "FingerprintGenerator")
 	    .def(py::init<AtomicSystem&, fingerprintProperties>())
-	    .def("write2file", &FingerprintGenerator::write2file);
-                     
+	    .def("write2file", &FingerprintGenerator::write2file)
+            .def_readwrite("sample1", &FingerprintGenerator::sample1)
+	    .def_readwrite("sample2", &FingerprintGenerator::sample2)
+	    .def_readwrite("natoms", &FingerprintGenerator::natoms)
+	    .def_readwrite("fsize", &FingerprintGenerator::fsize);
 }
 
 

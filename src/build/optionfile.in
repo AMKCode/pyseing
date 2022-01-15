@@ -1,7 +1,9 @@
-type = gaussian
+type = bispectrum
 natomtypes = 2
 atomtypes = Ga N
 strategy = weighted
 weight_type = electronegativity
-output_file = eg1.sg
-cutoff = 1.0
+output_file = eg2.sg
+output_mode = overwrite
+cutoff = 2.0
+jmax = 5
