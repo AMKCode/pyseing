@@ -44,7 +44,7 @@ PYBIND11_MODULE(seing4python, m){
 	    .def("get_y", &Atom::get_y)
 	    .def("get_z", &Atom::get_z);
    
-    py::class_<Element>(m, "Element");
+    //  py::class_<Element>(m, "Element");
 
     py::class_<PeriodicTable>(m, "PeriodicTable")
 	    .def(py::init<>())
