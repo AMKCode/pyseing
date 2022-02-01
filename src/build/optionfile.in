@@ -1,9 +1,11 @@
-type = bispectrum
-natomtypes = 2
-atomtypes = Ga N
+type = agni
+natomtypes = 1
+atomtypes = Al
 strategy = weighted
 weight_type = electronegativity
-output_file = eg2.sg
+output_file = al32_agni.sg
 output_mode = overwrite
-cutoff = 2.0
-jmax = 5
+cutoff = 6.5
+width = 0.1
+dimensionality = 32
+alpha = 0

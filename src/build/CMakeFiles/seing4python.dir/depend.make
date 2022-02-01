@@ -31,6 +31,7 @@ CMakeFiles/seing4python.dir/seing4python.cpp.o: ../genericlocalcalculator.cpp
 CMakeFiles/seing4python.dir/seing4python.cpp.o: ../genericlocalcalculator.h
 CMakeFiles/seing4python.dir/seing4python.cpp.o: ../inputs.cpp
 CMakeFiles/seing4python.dir/seing4python.cpp.o: ../inputs.h
+CMakeFiles/seing4python.dir/seing4python.cpp.o: ../main.cpp
 CMakeFiles/seing4python.dir/seing4python.cpp.o: ../neighborlist.cpp
 CMakeFiles/seing4python.dir/seing4python.cpp.o: ../neighborlist.h
 CMakeFiles/seing4python.dir/seing4python.cpp.o: ../periodictable.cpp
