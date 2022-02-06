@@ -85,13 +85,17 @@ PYBIND11_MODULE(pyseing, m){
 	    .def_readwrite("natoms", &FingerprintGenerator::natoms)
 	    .def_readwrite("fsize", &FingerprintGenerator::fsize);
 
-    m.def("CalculateFP", py::overload_cast<const std::string &, const std::string &>(&CalculateFP), "Calculates fingerprints and writes the output to a file, the corresponding AtomicSystem object is declared with periodic boundary conditions for all sides and a skin of 2.01778\n\nParameters:\n(arg0: str): the name of the .xyz file\n(arg1: str): the name of the option file\n(arg2: str): (OPTIONAL) the name of the output file, can be different from the one in the option file, useful in iteration to create multiple fingerprint files\n");
+    m.def("CalculateFP", &CalculateFP, "Calculates fingerprints and writes the output to a file, the corresponding AtomicSystem object is declared with periodic boundary conditions for all sides and a skin of 2.01778\n\nParameters:\n(arg0: str): the name of the .xyz file\n(arg1: str): the name of the option file\n");
 
-    m.def("CalculateFP", py::overload_cast<const std::string &, const std::string &, const std::string &>(&CalculateFP),  "Calculates fingerprints and write\
+    m.def("CalculateFP_w_fname", &CalculateFP, "Calculates fingerprints and writes the output to a file, the corresponding AtomicSystem object is declared with periodic boundary conditions for all sides and a skin of 2.01778\n\nParameters:\n(arg0: str): the name of the .xyz file\n(arg1: str): the name of the option file\n(arg2: str): the name of the output file, can be different from the one in the option file, useful in iteration to create multiple fingerprint files\n");
+
+    
+    // these two are overloaded methods of CalculateFP
+    //    m.def("CalculateFP", py::overload_cast<const std::string &, const std::string &>(&CalculateFP), "Calculates fingerprints and writes the output to a file, the corresponding AtomicSystem object is declared with periodic boundary conditions for all sides and a skin of 2.01778\n\nParameters:\n(arg0: str): the name of the .xyz file\n(arg1: str): the name of the option file\n(arg2: str): (OPTIONAL) the name of the output file, can be different from the one in the option file, useful in iteration to create multiple fingerprint files\n");
+
+    //    m.def("CalculateFP", py::overload_cast<const std::string &, const std::string &, const std::string &>(&CalculateFP),  "Calculates fingerprints and write \
 s the output to a file, the corresponding AtomicSystem object is declared with periodic boundary conditions for all sides and a skin o\
 f 2.01778\n\nParameters:\n(arg0: str): the name of the .xyz file\n(arg1: str): the name of the option file\n(arg2: str): \
 (OPTIONAL) the name of the output file, can be different from the one in the option file, useful in iteration to create multiple finge\
 rprint files\n");
 }
-
-

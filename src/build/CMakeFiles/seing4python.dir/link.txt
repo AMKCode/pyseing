@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -flto -shared  -o seing4python.cpython-38-x86_64-linux-gnu.so CMakeFiles/seing4python.dir/seing4python.cpp.o 

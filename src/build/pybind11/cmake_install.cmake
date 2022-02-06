@@ -1,4 +1,4 @@
-# Install script for directory: /home/kitao/Desktop/seing/att7/seing4python/src/pybind11
+# Install script for directory: /home/kitao/Desktop/seing/att8/seing4python/src/pybind11
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

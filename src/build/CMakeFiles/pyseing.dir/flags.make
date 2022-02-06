@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC -fvisibility=hidden   -flto -fno-fat-lto-objects
 
 CXX_DEFINES = -Dpyseing_EXPORTS
 
-CXX_INCLUDES = -isystem /home/kitao/Desktop/seing/att7/seing4python/src/pybind11/include -isystem /home/kitao/anaconda3/include/python3.8 
+CXX_INCLUDES = -isystem /home/kitao/Desktop/seing/att8/seing4python/src/pybind11/include -isystem /home/kitao/anaconda3/include/python3.8 
 

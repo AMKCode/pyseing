@@ -67,7 +67,7 @@ int CalculateFP(const std::string& xyzfilename, const std::string& propfilename)
     return 1;
 }
 
-int CalculateFP(const std::string& xyzfilename, const std::string& propfilename, const std::string& outputfilename) {
+int CalculateFP_w_fname(const std::string& xyzfilename, const std::string& propfilename, const std::string& outputfilename) {
 
     time_t start = time(0);
 
