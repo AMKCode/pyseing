@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -flto -shared  -o pyseing.cpython-38-x86_64-linux-gnu.so CMakeFiles/pyseing.dir/seing4python.cpp.o 
