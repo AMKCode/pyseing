@@ -1,5 +1,5 @@
 /home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles/rebuild_cache.dir
 /home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles/edit_cache.dir
-/home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles/seing4python.dir
+/home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles/pyseing.dir
 /home/kitao/Desktop/seing/att7/seing4python/src/build/pybind11/CMakeFiles/rebuild_cache.dir
 /home/kitao/Desktop/seing/att7/seing4python/src/build/pybind11/CMakeFiles/edit_cache.dir

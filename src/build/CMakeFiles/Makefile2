@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/kitao/Desktop/seing/att7/seing4python/src/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/seing4python.dir/all
+all: CMakeFiles/pyseing.dir/all
 all: pybind11/all
 
 .PHONY : all
@@ -64,7 +64,7 @@ preinstall: pybind11/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/seing4python.dir/clean
+clean: CMakeFiles/pyseing.dir/clean
 clean: pybind11/clean
 
 .PHONY : clean
@@ -88,31 +88,31 @@ pybind11/clean:
 .PHONY : pybind11/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/seing4python.dir
+# Target rules for target CMakeFiles/pyseing.dir
 
 # All Build rule for target.
-CMakeFiles/seing4python.dir/all:
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/depend
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles --progress-num=1,2 "Built target seing4python"
-.PHONY : CMakeFiles/seing4python.dir/all
+CMakeFiles/pyseing.dir/all:
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/depend
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles --progress-num=1,2 "Built target pyseing"
+.PHONY : CMakeFiles/pyseing.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/seing4python.dir/rule: cmake_check_build_system
+CMakeFiles/pyseing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/seing4python.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pyseing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kitao/Desktop/seing/att7/seing4python/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/seing4python.dir/rule
+.PHONY : CMakeFiles/pyseing.dir/rule
 
 # Convenience name for target.
-seing4python: CMakeFiles/seing4python.dir/rule
+pyseing: CMakeFiles/pyseing.dir/rule
 
-.PHONY : seing4python
+.PHONY : pyseing
 
 # clean rule for target.
-CMakeFiles/seing4python.dir/clean:
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/clean
-.PHONY : CMakeFiles/seing4python.dir/clean
+CMakeFiles/pyseing.dir/clean:
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/clean
+.PHONY : CMakeFiles/pyseing.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

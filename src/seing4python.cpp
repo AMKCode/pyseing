@@ -27,7 +27,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(seing4python, m){
+PYBIND11_MODULE(pyseing, m){
     m.doc() = "This is the Python version of the SEING library. SEING is a C/C++ package for fingerprint calculations suitable for machine learning studies of molecular systems.\n\nSEING was developed in the Clancy Group (https://clancygroup.wse.jhu.edu/) by Mardochee Reveil (mr937@cornell.edu). The Python version is implemented by Man Kit Ao (mao2@jh.edu) and Divya Sharma (dsharm23@jh.edu).\n\nFingerprints (in this context) are numerical representations of chemical environments designed to be invariant under property-perseving operations such as permutation of atoms of the same nature, geometric rotation, etc. For more information on fingerprints in general and the ones currently implemented in SEING, please see the official documentation and user-guide.";
     m.def("read_prop_file", &read_prop_file, "Reads in the option file that specifies the type of fingerprints to generate and creates an fingerprintProperties object\n\n\Parameters:\n(arg0: str): the name of the input file\n\nReturns:\nfingerprintProperties: a seing4python.fingerprintProperties object\n");
 

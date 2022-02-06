@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named seing4python
+# Target rules for targets named pyseing
 
 # Build rule for target.
-seing4python: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 seing4python
-.PHONY : seing4python
+pyseing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pyseing
+.PHONY : pyseing
 
 # fast build rule for target.
-seing4python/fast:
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/build
-.PHONY : seing4python/fast
+pyseing/fast:
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/build
+.PHONY : pyseing/fast
 
 seing4python.o: seing4python.cpp.o
 
@@ -129,7 +129,7 @@ seing4python.o: seing4python.cpp.o
 
 # target to build an object file
 seing4python.cpp.o:
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/seing4python.cpp.o
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/seing4python.cpp.o
 .PHONY : seing4python.cpp.o
 
 seing4python.i: seing4python.cpp.i
@@ -138,7 +138,7 @@ seing4python.i: seing4python.cpp.i
 
 # target to preprocess a source file
 seing4python.cpp.i:
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/seing4python.cpp.i
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/seing4python.cpp.i
 .PHONY : seing4python.cpp.i
 
 seing4python.s: seing4python.cpp.s
@@ -147,7 +147,7 @@ seing4python.s: seing4python.cpp.s
 
 # target to generate assembly for a file
 seing4python.cpp.s:
-	$(MAKE) -f CMakeFiles/seing4python.dir/build.make CMakeFiles/seing4python.dir/seing4python.cpp.s
+	$(MAKE) -f CMakeFiles/pyseing.dir/build.make CMakeFiles/pyseing.dir/seing4python.cpp.s
 .PHONY : seing4python.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... seing4python"
+	@echo "... pyseing"
 	@echo "... seing4python.o"
 	@echo "... seing4python.i"
 	@echo "... seing4python.s"
