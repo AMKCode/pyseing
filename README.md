@@ -1,4 +1,4 @@
-SEING v 0.1
+PYSEING v 0.1
 ============
 
 
@@ -15,6 +15,8 @@ nature, geometric rotation, etc. For more information on fingerprints in general
 currently implemented in SEING, please see the official documentation and user-guide.
 
 "SEING" is an old French word for signature.
+
+This is the Python implementation of the SEING program.
 
 DOCUMENTATION
 --------------
