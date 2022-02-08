@@ -1,4 +1,4 @@
-PYSEING v 0.1
+PYSEING v 0.1.0
 ============
 
 
