@@ -13,9 +13,9 @@ using namespace std;
 PeriodicTable::PeriodicTable() { //Data from https://chem.libretexts.org/Reference/Periodic_Table_of_the_Elements
     //Please use the 1st ionization energy values with caution. Highly recommended to double check values
 
-    nelements = 36;
+    nelements = 38;
 
-    elements = new Element[36];
+    elements = new Element[38];
 
     Element Hydrogen    = {"Hydrogen",   "H",   1, 2.2,   1.00794,  1312.0};  elements[0] = Hydrogen;
     Element Helium      = {"Helium",     "He",  2, 0.0,   4.002602, 2372.3};  elements[1] = Helium;
@@ -51,11 +51,10 @@ PeriodicTable::PeriodicTable() { //Data from https://chem.libretexts.org/Referen
     Element Germanium   = {"Germanium",  "Ge", 32, 2.01, 72.64,      762.0};  elements[31] = Germanium;
     Element Arsenic     = {"Arsenic",    "As", 33, 2.18, 74.9216,    947.0};  elements[32] = Arsenic;
     Element Selenium     = {"Selenium",  "Se", 34, 2.35, 78.96,      941.0};  elements[33] = Selenium;
-
     Element Indium      = {"Indium",     "In", 49, 1.78, 114.818,    558.3};  elements[34] = Indium;
-
     Element Tungsten    = {"Tungsten",   "W",  74, 2.36, 183.84,     770.0};  elements[35] = Tungsten;
-    
+    Element Silver      = {"Silver",     "Ag", 47, 1.93, 107.868,    731.01}; elements[36] = Silver;
+    Element Iodine      = {"Iodine",     "I", 53, 2.66, 126.9045,    1008.40}; elements[37] = Iodine;
 
 }
 
